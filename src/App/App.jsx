@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import validInput from "../StateFlowDetails/validInput.json";
-import stateChangeMap from "../StateFlowDetails/stateChange.json";
+import stateChangeMap from "../StateFlowDetails/stateChangeNew.json";
 import PopupMessage from "./PopupMessage/popupMsg";
 
 const App = () => {
@@ -59,6 +59,7 @@ const App = () => {
         <div>
           <input className='inputText' type="text" value={inputText} onChange={handleChange} />
           <button className='button' onClick={getNewState}>Get State</button>
+          <button className='button' onClick={()=> setCurrentState("S0")}>Reset</button>
         </div>
         <div className='container'>
           <p className='stateP'>Current State: {currentState}</p>
