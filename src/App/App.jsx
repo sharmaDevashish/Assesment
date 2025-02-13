@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import validInput from "../StateFlowDetails/validInput.json";
-import stateChangeMap from "../StateFlowDetails/stateChangeNew.json";
+//import stateChangeMap from "../StateFlowDetails/stateChangeNew.json";
+import stateChangeMap from "../StateFlowDetails/stateChangeInitial.json";
 import PopupMessage from "./PopupMessage/popupMsg";
 
 const App = () => {
