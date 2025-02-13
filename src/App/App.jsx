@@ -51,6 +51,12 @@ const App = () => {
     setInputText(val);
   }
 
+  const resetState = () =>{
+    setCurrentState("S0");
+    setStateMovement("S0");
+    setInputText("");
+  }
+
   return (
     <div >
       <header>
@@ -60,7 +66,7 @@ const App = () => {
         <div>
           <input className='inputText' type="text" value={inputText} onChange={handleChange} />
           <button className='button' onClick={getNewState}>Get State</button>
-          <button className='button' onClick={()=> setCurrentState("S0")}>Reset</button>
+          <button className='button' onClick={resetState}>Reset</button>
         </div>
         <div className='container'>
           <p className='stateP'>Current State: {currentState}</p>
